@@ -1,0 +1,6 @@
+@mixin get-order-card-theme($color) {
+  border-color: $color;
+  .card-header {
+    background: $color;
+  }
+}

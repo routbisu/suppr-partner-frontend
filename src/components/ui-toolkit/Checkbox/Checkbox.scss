@@ -1,0 +1,10 @@
+@import '../../../scss/index.scss';
+
+.checkbox-container {
+  display: inline-block;
+  svg {
+    font-size: 20px;
+    cursor: pointer;
+    color: $theme-color;
+  }
+}

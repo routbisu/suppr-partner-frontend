@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+@import './scss/reset.scss';
+@import './scss/variables.scss';
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 13px;
+  line-height: 1.2;
+  color: $text-color;
+}
+
+button {
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.error-message {
+  margin-top: 10px;
+  border: 2px solid $error-message-border;
+  background: $error-message-bg;
+  color: $error-message-color;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.error {
+  border: 1px solid $reject-color;
+}

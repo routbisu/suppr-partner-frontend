@@ -1,0 +1,208 @@
+@import '../../scss/';
+
+.order-card {
+  border: 1px solid $border-dark-grey;
+  height: 100%;
+  position: relative;
+  padding-bottom: 46px;
+
+  .card-header {
+    background: $light-grey-bg;
+    border-bottom: 1px solid $border-dark-grey;
+    color: $secondary-color;
+    font-weight: 600;
+    padding: 9px;
+
+    svg.fa-table {
+      margin-right: 7px;
+    }
+
+    svg.fa-close {
+      float: right;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+
+  .confirm {
+    background: $error-message-bg;
+    color: $error-message-color;
+    border-bottom: 1px solid $error-message-border;
+    padding: 4px;
+    span {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 5px;
+    }
+
+    .btn-section {
+      float: right;
+      button {
+        background: $theme-color;
+        color: $white-color;
+        margin-left: 6px;
+        padding: 5px 9px;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+      button.no {
+        background: $secondary-color;
+      }
+    }
+  }
+
+  .card-sub-header {
+    padding: 9px;
+    color: $theme-color;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    .order-number {
+      text-transform: uppercase;
+    }
+
+    .order-time {
+      float: right;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+
+  .items-section {
+    padding-bottom: 1px;
+
+    .item-details {
+      background: $light-grey-bg;
+      border: 1px solid $border-dark-grey;
+      border-right: none;
+      border-left: none;
+      font-weight: 600;
+      color: $secondary-color;
+      padding: 9px;
+      padding-right: 0px;
+      margin-bottom: -1px;
+
+      .customization {
+        margin-top: 8px;
+      }
+
+      .addon-container {
+        font-weight: normal;
+        font-size: 0.95rem;
+        padding-left: 25px;
+        margin-top: 6px;
+      }
+
+      span.quantity {
+        border-radius: 3px;
+        background: $theme-color;
+        color: $white-color;
+        padding: 0px 5px;
+        margin-right: 4px;
+      }
+
+      span.price {
+        background: transparent;
+        color: $theme-color;
+        float: right;
+        &::before {
+          margin-right: 3px;
+          content: '₹';
+        }
+      }
+    }
+  }
+
+  .notes {
+    padding: 10px;
+    color: $black-color;
+    font-weight: 600;
+    line-height: 1.4em;
+    opacity: 0.7;
+  }
+
+  .footer-msg {
+    padding: 10px;
+    background: $error-message-bg;
+    border: 1px solid $error-message-border;
+    color: $error-message-color;
+    font-weight: 600;
+  }
+
+  .card-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    button {
+      padding: 15px;
+      font-size: 1.1rem;
+      color: $white-color;
+      svg {
+        margin-right: 7px;
+      }
+    }
+
+    button.btn-accept {
+      width: 60%;
+      background: $theme-color;
+      border-top: 1px solid $theme-color;
+    }
+
+    button.btn-reject {
+      width: 40%;
+      border-top: 1px solid $border-light-grey;
+      background: transparent;
+      color: $theme-color;
+    }
+
+    button.btn-prepare {
+      width: 60%;
+      background: $prepare-color;
+    }
+
+    button.btn-serve {
+      width: 60%;
+      background: $serve-color;
+    }
+
+    button.btn-bill {
+      background: $bill-color;
+    }
+
+    button.btn-complete {
+      background: $theme-color;
+      width: 100%;
+    }
+
+    .bill-amount-holder {
+      display: inline-block;
+      input {
+        border-top: 1px solid $border-light-grey;
+        width: 100%;
+        padding: 11.5px 8px;
+      }
+    }
+
+    .order-message {
+      display: inline-block;
+      width: 40%;
+      padding-left: 14px;
+      color: $black-color;
+      font-weight: 600;
+      opacity: 0.5;
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.order-card-no-buttons {
+  padding-bottom: 0px;
+  .items-section {
+    padding-bottom: 0px;
+  }
+}

@@ -1,0 +1,89 @@
+@import '../../scss/';
+
+.login-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background: $white-color;
+
+  .login-form {
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 25px;
+    background: $white-color;
+
+    .logo-container {
+      text-align: center;
+      img {
+        width: 120px;
+      }
+      margin-bottom: 10px;
+    }
+
+    input {
+      border-radius: 3px;
+      width: 100%;
+      border: 2px solid $light-grey;
+      padding: 10px;
+      color: $text-color;
+      margin-top: 10px;
+      opacity: 0.8;
+      -webkit-appearance: none;
+    }
+
+    .forgot-password {
+      margin-top: 20px;
+      color: $light-grey;
+      font-size: 0.9rem;
+      text-align: center;
+
+      a {
+        color: $theme-color;
+        text-decoration: none;
+      }
+    }
+
+    .btn-submit {
+      border-radius: 3px;
+      background: $theme-color;
+      width: 100%;
+      color: $white-color;
+      padding: 15px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+      -webkit-appearance: none;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    background: url('../../images/login-screen-bg.jpg');
+    background-size: cover;
+
+    .dark-filter {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: #000000;
+      opacity: 0.55;
+      z-index: 2;
+    }
+
+    .login-form {
+      right: 100px;
+      background: $white-color;
+      max-width: 380px;
+      border-radius: 5px;
+    }
+  }
+}

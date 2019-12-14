@@ -1,0 +1,38 @@
+@import '../../scss/';
+
+.layout-container {
+  .layout-children-container {
+    background: $white-color;
+    border: 2px solid $border-light-grey;
+    margin: 10px;
+    margin-top: 16px;
+  }
+
+  .page-name {
+    margin-top: 68px;
+    margin-left: 20px;
+    color: $theme-color;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    @media screen and (min-width: 450px) {
+      margin-left: 80px;
+    }
+  }
+
+  .page-name-open {
+    @media screen and (min-width: 450px) {
+      margin-left: 270px;
+    }
+  }
+
+  @media screen and (min-width: 450px) {
+    .menu-open-view {
+      margin-left: 262px;
+    }
+
+    .menu-close-view {
+      margin-left: 75px;
+    }
+  }
+}

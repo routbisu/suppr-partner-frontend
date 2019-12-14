@@ -1,0 +1,6 @@
+{
+  "apiDetails": {
+    "baseUrl": "http://localhost:5020"
+  },
+  "pollingDuration": 2500
+}

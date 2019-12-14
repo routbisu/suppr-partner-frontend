@@ -1,0 +1,6 @@
+{
+  "apiDetails": {
+    "baseUrl": "https://api.suppr.in"
+  },
+  "pollingDuration": 10000
+}

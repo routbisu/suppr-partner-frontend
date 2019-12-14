@@ -1,0 +1,50 @@
+@import './scss/';
+
+body {
+  background: $light-grey-bg;
+}
+
+.app-container {
+  .app-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .images-section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      img {
+        display: block;
+        margin: auto;
+      }
+      img.logo {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.react-ripples {
+  display: inherit !important;
+}
+
+// Common css classes for margin / padding
+.mt-1 {
+  margin-top: 0.7rem;
+}
+
+.mobile-only {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

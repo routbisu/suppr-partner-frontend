@@ -1,0 +1,92 @@
+@import '../../scss/';
+
+.inventory-container {
+  padding: 10px;
+
+  .items-inventory {
+    h3 {
+      padding: 12px 10px;
+      font-weight: 600;
+      color: $white-color;
+      background: $theme-color;
+      margin-bottom: 10px;
+
+      .checkbox-container {
+        float: right;
+        position: relative;
+        top: -4px;
+        svg {
+          color: $white-color;
+        }
+      }
+    }
+
+    h4 {
+      background: $light-grey-bg;
+      color: $theme-color;
+      padding: 10px;
+      border: 1px solid $border-light-grey;
+      border-bottom: none;
+      .checkbox-container {
+        float: right;
+        position: relative;
+        top: -4px;
+      }
+    }
+
+    ul {
+      margin-bottom: 10px;
+      border-top: 1px solid $border-light-grey;
+
+      li {
+        padding: 10px;
+        border: 1px solid $border-light-grey;
+        border-top: none;
+
+        span {
+          opacity: 0.6;
+          font-size: 0.9rem;
+        }
+
+        .right-section {
+          float: right;
+          color: $theme-color;
+          font-weight: 600;
+
+          span.price {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+            opacity: 1;
+            &::before {
+              content: '\20B9';
+              padding-right: 2px;
+            }
+          }
+
+          .checkbox-container {
+            position: relative;
+            top: -4px;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-right-section {
+    text-align: right;
+    margin-bottom: 10px;
+    button {
+      padding: 10px;
+      color: $white-color;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+    button.btn-save {
+      background: $theme-color;
+    }
+    button.btn-reset {
+      background: $secondary-color;
+    }
+  }
+}

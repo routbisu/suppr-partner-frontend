@@ -1,0 +1,68 @@
+@import '../../scss/';
+
+.left-nav-container {
+  background: $white-color;
+  border-right: 1px solid $border-light-grey;
+  border-bottom: 1px solid $border-light-grey;
+  position: fixed;
+  bottom: 0;
+  top: 53px;
+  z-index: 100;
+
+  ul {
+    display: inline-block;
+    color: #757575;
+
+    a {
+      color: inherit;
+    }
+
+    li {
+      position: relative;
+
+      .menu-item-content {
+        position: absolute;
+        width: 200px;
+      }
+
+      height: 18px;
+      padding: 18px;
+      padding-left: 13px;
+      cursor: pointer;
+      border-bottom: 1px solid $border-light-grey;
+      border-left: 5px solid transparent;
+      font-weight: 600;
+      overflow: hidden;
+
+      svg {
+        display: inline-block;
+        font-size: 1.2rem;
+        width: 32px !important;
+      }
+
+      span {
+        padding-left: 15px;
+      }
+    }
+
+    li.active {
+      background: #f4f6ef;
+      border-left: 5px solid $theme-color;
+      span {
+        color: $theme-color;
+      }
+    }
+  }
+
+  ul.menu-open {
+    width: 250px;
+  }
+
+  ul.menu-closed {
+    width: 63px;
+    @media screen and (max-width: 450px) {
+      width: 0px;
+      display: none;
+    }
+  }
+}

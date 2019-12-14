@@ -1,0 +1,67 @@
+@import '../../scss/';
+
+.header-container {
+  background: $white-color;
+  border-bottom: 1px solid $border-light-grey;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .logo-container {
+    display: inline-block;
+
+    svg {
+      color: $theme-color;
+      font-size: 1.7rem;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    img {
+      margin-left: 20px;
+      height: 18px;
+      position: relative;
+      top: 2px;
+    }
+
+    .ordering-switch-holder {
+      margin-left: 5px;
+      svg {
+        color: $secondary-color;
+        opacity: 0.6;
+      }
+    }
+
+    .restaurant-name {
+      color: $secondary-color;
+      opacity: 0.6;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-left: 10px;
+      position: relative;
+      top: -3px;
+      text-transform: uppercase;
+    }
+
+    .restaurant-open {
+      opacity: 1;
+      color: $theme-color;
+      svg {
+        color: $theme-color;
+        opacity: 1;
+      }
+    }
+  }
+
+  .right-section {
+    float: right;
+    margin-top: 3px;
+    padding-right: 10px;
+    svg {
+      color: $theme-color;
+      cursor: pointer;
+    }
+  }
+}
